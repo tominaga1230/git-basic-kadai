@@ -1,0 +1,56 @@
+Last login: Thu Apr  4 09:02:48 on ttys002
+tominagayoshikazu@tominagkonpyuta ~ % pwd
+/Users/tominagayoshikazu
+tominagayoshikazu@tominagkonpyuta ~ % mkdir git_challenge
+tominagayoshikazu@tominagkonpyuta ~ % cd git_challenge
+tominagayoshikazu@tominagkonpyuta git_challenge % git init 
+Initialized empty Git repository in /Users/tominagayoshikazu/git_challenge/.git/
+tominagayoshikazu@tominagkonpyuta git_challenge % git add hello_world.txt
+fatal: pathspec 'hello_world.txt' did not match any files
+tominagayoshikazu@tominagkonpyuta git_challenge % vi hello_world.txt
+tominagayoshikazu@tominagkonpyuta git_challenge % cat hello_world.txt
+Hello,worl!
+
+tominagayoshikazu@tominagkonpyuta git_challenge % git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+tominagayoshikazu@tominagkonpyuta git_challenge % git add .      
+tominagayoshikazu@tominagkonpyuta git_challenge % git commit -m "最初のコミット"
+[main (root-commit) be7b97c] 最初のコミット
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hello_world.txt
+tominagayoshikazu@tominagkonpyuta git_challenge % vi hello_world.txt
+tominagayoshikazu@tominagkonpyuta git_challenge % cat hello_world.txt
+Hello,worl!
+こんにちは、世界！
+
+tominagayoshikazu@tominagkonpyuta git_challenge % git add hello_world.txt
+tominagayoshikazu@tominagkonpyuta git_challenge % git commit -m "2回目のコミット"
+[main 724a96a] 2回目のコミット
+ 1 file changed, 1 insertion(+)
+tominagayoshikazu@tominagkonpyuta git_challenge % git stayus
+git: 'stayus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+tominagayoshikazu@tominagkonpyuta git_challenge % git status
+On branch main
+nothing to commit, working tree clean
+tominagayoshikazu@tominagkonpyuta git_challenge % git log
+commit 724a96a8d2ccea47b34aa18f1c7929dbabbd2a7a (HEAD -> main)
+Author: tominaga1230 <alskdjfhg1@me.com>
+Date:   Sat Apr 6 10:18:57 2024 +0900
+
+    2回目のコミット
+
+commit be7b97c8b79a8524d2322b2efeb03482b42247a9
+Author: tominaga1230 <alskdjfhg1@me.com>
+Date:   Sat Apr 6 10:16:43 2024 +0900
+
+    最初のコミット
+tominagayoshikazu@tominagkonpyuta git_challenge % mkdir kadai_005
+tominagayoshikazu@tominagkonpyuta git_challenge % cd kadai_005
+tominagayoshikazu@tominagkonpyuta kadai_005 % vi kadai_005.txt
+
